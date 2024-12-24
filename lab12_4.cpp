@@ -2,6 +2,10 @@
 
 using namespace std;
 
+void mySwap(int &x ,int &y);
+void mySwap(string &a ,string &b );
+void mySwap(char &p ,char &q);
+
 int main(){
 	int x, y;
 	string a, b;
@@ -30,3 +34,21 @@ int main(){
 	return 0;
 }
 
+void mySwap(int &x ,int &y){
+	int i = y;
+	
+	y = x;
+	x = i;
+}
+
+void mySwap(string &a ,string &b ){
+string i = a;
+	a = b;
+	b = i;
+}
+
+void mySwap(char &p ,char &q){
+	char i = p;
+	p = q;
+	q = i;
+}
